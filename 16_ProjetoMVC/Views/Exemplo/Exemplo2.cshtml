@@ -1,0 +1,26 @@
+<div class="text-center">
+<h1> Exemplo-2 </h1>
+<div class=" d-flex justify-content-center">
+    <button class="btn btn-outline-dark ">Clique aqui</button>
+</div>
+@{
+    string nome = "Gustavo";
+}
+<h1>Olá, @nome</h1>
+<p><b>Hoje é @DateTime.Now.ToString("dd/MM/yyyy")</b></p>
+<p><b>Agora São @DateTime.Now.ToString("hh:mm:ss")</b></p>
+
+@{
+     bool mostrarMensagem = true;
+     if (mostrarMensagem == true)
+     {
+        <p><b>Está é uma mensagem que entrou em um if</b></p>
+     }
+
+     for (int i=1; i <= 10; i++)
+     {
+        int res = i*8;
+        <p><b>8 x @i = @res</b></p>
+     }
+}
+</div>
